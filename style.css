@@ -1024,3 +1024,131 @@ body {
     }
 
 }
+
+
+/* PROGRAM SKILLS */
+
+.program-card h4 {
+    color: #10004d;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.skill-list {
+    list-style: none;
+}
+
+.skill-list li {
+    color: #64748b;
+    font-size: 14px;
+    padding: 10px 0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.skill-list li::before {
+    content: "✓";
+    color: #35b900;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+
+/* PROGRAMS PAGE HERO */
+
+.programs-hero {
+    padding: 100px 7%;
+    background: #f8fafc;
+    text-align: center;
+}
+
+.programs-hero-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.programs-hero h1 {
+    color: #10004d;
+    font-size: 50px;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.programs-hero h1 span {
+    display: block;
+    color: #35b900;
+}
+
+.programs-hero-content > p:not(.section-tag) {
+    color: #64748b;
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+/* PROGRAM APPLICATION CTA */
+
+.program-cta {
+    padding: 90px 7%;
+    background: #10004d;
+    text-align: center;
+}
+
+.program-cta-content {
+    max-width: 750px;
+    margin: auto;
+}
+
+.program-cta h2 {
+    color: white;
+    font-size: 40px;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+.program-cta h2 span {
+    color: #35b900;
+}
+
+.program-cta-content > p:not(.section-tag) {
+    color: #cbd5e1;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.program-cta .secondary-btn {
+    border-color: white;
+    color: white;
+    margin-left: 10px;
+}
+
+.program-cta .secondary-btn:hover {
+    background: white;
+    color: #10004d;
+}
+
+/* PROGRAMS PAGE RESPONSIVENESS */
+
+@media (max-width: 650px) {
+
+    .programs-hero {
+        padding: 70px 6%;
+    }
+
+    .programs-hero h1 {
+        font-size: 36px;
+    }
+
+    .program-cta {
+        padding: 70px 6%;
+    }
+
+    .program-cta h2 {
+        font-size: 32px;
+    }
+
+    .program-cta .secondary-btn {
+        margin: 15px 0 0;
+    }
+
+}
+
