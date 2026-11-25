@@ -1495,3 +1495,212 @@ body {
     background: #eaf7e5;
     color: #268000;
 }
+
+/* INTERACTIVE INTERNSHIP ROADMAP */
+
+.interactive-roadmap {
+    padding: 90px 8%;
+    background-color: #f5f7f5;
+}
+
+.interactive-roadmap .roadmap-heading {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 45px;
+}
+
+.interactive-roadmap .roadmap-heading h2 {
+    font-size: 36px;
+    color: #172554;
+    margin: 15px 0;
+}
+
+.interactive-roadmap .roadmap-heading p {
+    line-height: 1.7;
+    color: #555;
+}
+
+/* TRACK BUTTONS */
+
+.track-selection {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 35px;
+}
+
+.track-btn {
+    padding: 14px 25px;
+    border: 2px solid #176b3a;
+    background: transparent;
+    color: #176b3a;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.track-btn:hover,
+.track-btn.active {
+    background-color: #176b3a;
+    color: white;
+}
+
+/* SELECTED TRACK */
+
+.selected-track {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.selected-track h3 {
+    font-size: 28px;
+    color: #172554;
+    margin: 10px 0;
+}
+
+/* INTERACTIVE TASK GRID */
+
+.interactive-task-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.interactive-task-card {
+    background: white;
+    padding: 28px;
+    border-radius: 12px;
+    border: 1px solid #e2e8e2;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.04);
+    transition: transform 0.3s ease;
+}
+
+.interactive-task-card:hover {
+    transform: translateY(-5px);
+}
+
+.interactive-task-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+
+.interactive-task-number {
+    font-size: 22px;
+    font-weight: 700;
+    color: #176b3a;
+}
+
+.interactive-task-day {
+    font-size: 13px;
+    font-weight: 600;
+    color: #64748b;
+}
+
+.interactive-task-card h3 {
+    color: #172554;
+    margin: 15px 0 10px;
+}
+
+.interactive-task-card p {
+    color: #555;
+    line-height: 1.7;
+}
+
+.interactive-task-level {
+    display: inline-block;
+    padding: 6px 12px;
+    background: #e7f5eb;
+    color: #176b3a;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* MOBILE RESPONSIVENESS */
+
+@media (max-width: 768px) {
+    .interactive-roadmap {
+        padding: 65px 5%;
+    }
+
+    .interactive-roadmap .roadmap-heading h2 {
+        font-size: 28px;
+    }
+
+    .interactive-task-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .track-selection {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .track-btn {
+        width: 100%;
+    }
+}
+
+/* 30-DAY PROGRESSION TIMELINE */
+
+.progress-timeline {
+    max-width: 1100px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+.progress-timeline h3 {
+    color: #172554;
+    margin-bottom: 25px;
+    font-size: 22px;
+}
+
+.timeline-days {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.timeline-item {
+    background: white;
+    border: 1px solid #176b3a;
+    color: #176b3a;
+    padding: 15px 10px;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .timeline-days {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* DIFFICULTY LEVEL INDICATORS */
+
+.interactive-task-level {
+    display: inline-block;
+    padding: 7px 13px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.interactive-task-level.beginner {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.interactive-task-level.progressing {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.interactive-task-level.intermediate {
+    background: #dbeafe;
+    color: #1e40af;
+}
