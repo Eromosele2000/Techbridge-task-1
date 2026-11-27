@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>TechBridge | Challenge Hub</title>
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <!-- HEADER -->
+        <header>
+            <nav class="navbar">
+
+                <div class="logo">
+                    <img src="images/logo.png" alt="TechBridge Logo">
+                </div>
+
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="programs.html">Programs</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="tasks.html">Internship Tasks</a></li>
+                </ul>
+
+            </nav>
+        </header>
+
+        <!-- MAIN CONTENT -->
+        <main>
+
+            <section class="challenge-hero">
+
+                <p class="challenge-tag">EXPLORE. PRACTISE. BUILD.</p>
+
+                <h1>TechBridge Challenge Hub</h1>
+
+                <p>
+                    Explore practical challenges designed to help you apply your skills,
+                    strengthen your problem-solving abilities, and gain real-world experience.
+                </p>
+
+            </section>
+
+            <section class="challenge-section">
+
+            <h2>Explore Our Challenges</h2>
+
+            <p>Choose a challenge, test your skills, and build something meaningful.</p>
+
+            <div class="challenge-filters">
+                <div id="track-filters">
+        <button class="filter-btn active" data-track="All">All Tracks</button>
+        <button class="filter-btn" data-track="Data Analytics">Data Analytics</button>
+        <button class="filter-btn" data-track="Web Development">Web Development</button>
+                </div>
+
+                <div id="difficulty-filters">
+                <button class="filter-btn active" data-difficulty="All">All Levels</button>
+                <button class="filter-btn" data-difficulty="Beginner">Beginner</button>
+                <button class="filter-btn" data-difficulty="Intermediate">Intermediate</button>
+                <button class="filter-btn" data-difficulty="Advanced">Advanced</button>
+                </div>
+            </div>
+
+            <div id="challenge-count"></div>
+
+            <div id="challenge-container" class="challenge-grid">
+                <!-- Challenge cards will be generated with JavaScript -->
+            </div>
+
+            </section><div class="challenge-modal" id="challenge-modal">
+
+            <div class="modal-content">
+
+                <button class="modal-close" id="modal-close">&times;</button>
+
+                <div id="modal-details"></div>
+
+            </div>
+
+        </div>
+
+
+
+        </main>
+
+        <!-- FOOTER -->
+            
+        <footer class="footer">
+
+            <div class="footer-container">
+
+                <div class="footer-brand">
+                    <h3>TechBridge</h3>
+                    <p>Bridging Learning to Real-World Experience.</p>
+                </div>
+
+            </div>
+
+        </footer>
+        <script src="challenges.js"></script>
+    </body>
+</html>

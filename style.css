@@ -587,9 +587,9 @@ body {
 }
 
 
-/* =========================
+/*
    INTERNSHIP SECTION
-========================= */
+ */
 
 .internship {
     padding: 100px 7%;
@@ -966,9 +966,9 @@ body {
     color: #35b900;
 }
 
-/* =========================
+/*
    FOOTER
-========================= */
+ */
 
 .footer {
     padding: 40px 7%;
@@ -1703,4 +1703,247 @@ body {
 .interactive-task-level.intermediate {
     background: #dbeafe;
     color: #1e40af;
+}
+
+/* CHALLENGE HUB HERO */
+.challenge-hero {
+    text-align: center;
+    padding: 80px 7% 50px;
+    background: #f5f3ff;
+}
+
+.challenge-tag {
+    color: #16a34a;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.challenge-hero h1 {
+    color: #10004d;
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.challenge-hero > p:last-child {
+    max-width: 650px;
+    margin: auto;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* CHALLENGE SECTION */
+.challenge-section {
+    padding: 50px 7% 80px;
+}
+
+.challenge-section h2 {
+    color: #10004d;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.challenge-section > p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 600px) {
+    .challenge-hero h1 {
+        font-size: 30px;
+    }
+}
+
+
+/* CHALLENGE CARDS */
+.challenge-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.challenge-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    border: 1px solid #eee;
+    transition: transform 0.3s ease;
+}
+
+.challenge-card:hover {
+    transform: translateY(-6px);
+}
+
+.challenge-track {
+    display: inline-block;
+    background: #ede9fe;
+    color: #10004d;
+    padding: 7px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.challenge-card h3 {
+    color: #10004d;
+    margin: 18px 0 12px;
+    font-size: 20px;
+}
+
+.difficulty {
+    display: inline-block;
+    background: #dcfce7;
+    color: #166534;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.challenge-card p {
+    color: #666;
+    line-height: 1.7;
+    font-size: 14px;
+    margin: 15px 0;
+}
+
+.challenge-card h4 {
+    color: #10004d;
+    margin-top: 18px;
+}
+
+.challenge-card button {
+    background: #10004d;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+.challenge-card button:hover {
+    background: #16a34a;
+}
+
+@media (max-width: 900px) {
+    .challenge-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .challenge-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .challenge-card {
+        padding: 20px;
+    }
+}
+
+
+.challenge-filters {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin: 30px 0;
+}
+
+#track-filters,
+#difficulty-filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.filter-btn {
+    padding: 10px 18px;
+    border: 1px solid #10004d;
+    border-radius: 25px;
+    background: white;
+    color: #10004d;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: #10004d;
+    color: white;
+}
+
+#challenge-count {
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+
+/* CHALLENGE DETAILS MODAL */
+
+.challenge-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.challenge-modal.active {
+    display: flex;
+}
+
+.modal-content {
+    background: white;
+    width: 100%;
+    max-width: 600px;
+    max-height: 85vh;
+    overflow-y: auto;
+    padding: 35px;
+    border-radius: 12px;
+    position: relative;
+}
+
+.modal-close {
+    position: absolute;
+    top: 12px;
+    right: 18px;
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: #10004d;
+    cursor: pointer;
+}
+
+.modal-content h2 {
+    color: #10004d;
+    margin-bottom: 20px;
+}
+
+.modal-content p {
+    color: #555;
+    line-height: 1.8;
+    margin: 12px 0;
+}
+
+.modal-content strong {
+    color: #10004d;
+}
+
+@media (max-width: 600px) {
+    .modal-content {
+        padding: 30px 20px;
+    }
 }
